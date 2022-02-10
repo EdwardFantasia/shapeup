@@ -4,26 +4,25 @@
     box-sizing: border-box;
 }
 
-body header{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    padding: 0 1em;
-    max-width: 1000px;
-    width: 100%;
-    margin: 0 auto;
-    border: 3px solid steelblue;
-    box-shadow: 1px -10px 8px 10px #888888; 
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
-body main{
+html{
+    background-color: lightsteelblue
+}
+
+body{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 100%;
-        padding: 0 1em;
         max-width: 1000px;
         width: 100%;
         margin: 0 auto;
         border: 3px solid steelblue;
         box-shadow: 1px 10px 8px 10px #888888;
+        background-color: white;
 }
 
 h1, h2, h3, p, blockquote {
@@ -43,8 +42,34 @@ header h2 {
 
 }
 
+main{
+    padding: 0 1em;
+}
+
+aside{
+    width: 35%;
+    padding-top: 1.6em;
+}
+
+section{
+    width: 65%;
+    float: right;
+}
+
+blockquote{
+    font-style: italic;
+    padding: 1em;
+    border-left: 3px solid steelblue;
+    background-color: #eeeeee;
+    border-radius: 5px;
+}
+
 h3 {
     font-size: 150%
+}
+
+a{
+    text-decoration: none;
 }
 
 section a:link, section a:visited {
@@ -62,29 +87,33 @@ aside a:hover, aside a:active{
 }
 
 footer {
+    clear: both;
     background-color: steelblue;
     text-align: center;
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    padding: 1em;
-    box-shadow: 1px 10px 8px 10px #888888;
+    padding: 15px 0;
 }
 
-body blockquote{
-    text-indent: 50px;
-    word-wrap: break-word;
+ul{
+    margin-left: 1em;
+    padding-bottom: 1em;
 }
 
-body li{
-    margin-left: 50px;
+li{
+    font-weight: bold;
+    line-height: 130%;
 }
 
 footer p{
     color: white;
+    font-weight: bold;
+    text-align: center;
+    font-variant: small-caps;
 }
 
 header{
-    background-image: linear-gradient(white, rgb(108, 173, 226));
-    padding: (0 0%);
+    background-image: linear-gradient(white, lightsteelblue);
+    border-bottom: 3px solid steelblue;
 }
