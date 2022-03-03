@@ -19,7 +19,7 @@ html{
 body{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 100%;
-        max-width: 1200px;
+        max-width: 1000px;
         width: 100%;
         margin: 0 auto;
         border: 3px solid steelblue;
@@ -40,11 +40,11 @@ header h2 {
 
 #logoimage{
     float: left;
-    padding-right: 1.5em;
+    margin-right: 15px;
 
 }
 
-/* Horizontal inline navigation menu
+/* Horizontal inline navigation menu */
 #nav_menu{
     margin: 0;
 }
@@ -55,7 +55,7 @@ header h2 {
     border-top: 1px solid steelblue;
     border-bottom: 1px solid steelblue;
     background-color: steelblue;
-    padding: 10px 0; /*2 values: 1st value top&bottom
+    padding: 10px 0; /*2 values: 1st value top&bottom*/
 }
 
 #nav_menu ul li{
@@ -80,60 +80,6 @@ header h2 {
 
 #nav_menu ul li:hover{
     background-color: lightsteelblue;
-} */
-
-/* End nav menu */
-
-/* #nav_menu 2-tier menu using block and float */
-#nav_menu{
-    border-bottom: 2px solid steelblue;
-}
-
-#nav_menu ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    position: relative;
-}
-
-#nav_menu ul li{
-    float: left;
-    width: 20%;
-}
-
-#nav_menu ul li a{
-    display: block;
-    text-align: center;
-    padding: .7em 0;
-    background-color: steelblue;
-    font-weight: bold;
-    color: white;
-    text-decoration: none;
-}
-
-#nav_menu ul ul{
-    display: none;
-    position: absolute;
-    top: 100%;
-    width: 100%;
-}
-
-#nav_menu ul ul li{
-    float: none;
-}
-
-#nav_menu ul li:hover > ul{
-    display: block;
-}
-
-#nav_menu > ul::after{
-    content: "";
-    clear: both;
-    display: block;
-}
-
-#nav_menu ul li a:hover, #nav_menu ul li:focus{
-    background-color: lightsteelblue;
 }
 
 main{
@@ -141,8 +87,8 @@ main{
 }
 
 aside{
-    width: 30%;
-    padding-top: 10px;
+    width: 35%;
+    padding-top: 1.6em;
 }
 
 #nav_list h2{
@@ -166,7 +112,6 @@ aside{
     background-color: lightsteelblue;
     padding: .5em 0 .5em .5em;
     color: black;
-    border-radius: 25px;
 }
 
 #nav_list ul li a:hover{
@@ -175,19 +120,8 @@ aside{
 }
 
 section{
-    width: 40%;
-    float: left;
-    padding-top: 10px;
-    padding-right: 5px;
-}
-
-#leftaside{
-    float: left;
-}
-
-#rightaside{
+    width: 65%;
     float: right;
-    padding-left: 5px;
 }
 
 blockquote{
@@ -245,56 +179,6 @@ footer p{
     font-weight: bold;
     text-align: center;
     font-variant: small-caps;
-}
-
-/* Hide MobileMenu */
-#mobilemenu{
-    display: none;
-}
-
-/* Media Queries */
-@media only screen and (max-width: 900px) {
-    body {
-      box-shadow: none;
-      font-size: 90%;
-    }
-  }
-
-@media only screen and (max-width: 767px) {
-    #nav_menu{
-        display: none;
-    }
-
-    #mobilemenu{
-        display: block;
-    }
-
-    .slicknav_menu{
-        background-color: steelblue !important;
-    }
-
-    header h2{
-        font-size: 200%;
-    }
-
-    section, aside{
-        float: none;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        padding: .5em;
-    }
-
-    #logoimage{
-        float: none;
-        padding: .5em;
-        display: block;
-        margin: 0 auto;
-    }
-
-    header img, header h2, header h3{
-        text-align: center;
-    }
 }
 
 header{
